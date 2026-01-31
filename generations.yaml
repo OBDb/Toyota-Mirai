@@ -1,3 +1,6 @@
+references:
+  - "https://en.wikipedia.org/wiki/Toyota_Mirai"
+
 generations:
   - name: "First Generation (JPD10)"
     start_year: 2014
