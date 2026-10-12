@@ -1,0 +1,8 @@
+command_id: 7D2.7DA.221039
+test_cases:
+- expected_values:
+    MIRAI_FRONT_REAR_MOTOR_TQ: -28.285
+  response: 7DA0762103928001183
+- expected_values:
+    MIRAI_FRONT_REAR_MOTOR_TQ: -28.284
+  response: 7DA0762103928001184

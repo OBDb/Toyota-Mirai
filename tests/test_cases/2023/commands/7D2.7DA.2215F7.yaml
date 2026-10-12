@@ -1,0 +1,14 @@
+command_id: 7D2.7DA.2215F7
+test_cases:
+- expected_values:
+    MIRAI_12V_C: -40.19159
+  response: 7DA056215F756D8
+- expected_values:
+    MIRAI_12V_C: -0.98029
+  response: 7DA056215F77EFF
+- expected_values:
+    MIRAI_12V_C: 8.959999999547108e-05
+  response: 7DA056215F78000
+- expected_values:
+    MIRAI_12V_C: 62.25599
+  response: 7DA056215F7BFC0

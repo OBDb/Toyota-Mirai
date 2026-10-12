@@ -1,0 +1,17 @@
+command_id: 747.74F.221F9A
+test_cases:
+- expected_values:
+    MIRAI_HYBRID_BAT_CURRENT: 8
+  response: |-
+    74F1009621F9A06004F
+    74F2180005000000000
+- expected_values:
+    MIRAI_HYBRID_BAT_CURRENT: 10.1
+  response: |-
+    74F1009621F9A06004F
+    74F2180006500000000
+- expected_values:
+    MIRAI_HYBRID_BAT_CURRENT: 1.5
+  response: |-
+    74F1009621F9A060050
+    74F2180000F00000000

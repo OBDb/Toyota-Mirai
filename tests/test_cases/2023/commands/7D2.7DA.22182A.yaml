@@ -1,0 +1,8 @@
+command_id: 7D2.7DA.22182A
+test_cases:
+- expected_values:
+    MIRAI_HVBAT_MIN_T: 7
+  response: 7DA0562182A3900
+- expected_values:
+    MIRAI_HVBAT_MIN_T: 38
+  response: 7DA0562182A5800

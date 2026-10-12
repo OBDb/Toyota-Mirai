@@ -1,0 +1,17 @@
+command_id: 7D2.7DA.220103|fc=1
+test_cases:
+- expected_values:
+    MIRAI_ODO_V2: null
+  response: 7DA0762010300FFFFFF
+- expected_values:
+    MIRAI_ODO_V2: 11516
+  response: 7DA0762010302002CFC
+- expected_values:
+    MIRAI_ODO_V2: 11519
+  response: 7DA0762010302002CFF
+- expected_values:
+    MIRAI_ODO_V2: 11520
+  response: 7DA0762010302002D00
+- expected_values:
+    MIRAI_ODO_V2: 17417
+  response: 7DA0762010302004409

@@ -1,0 +1,8 @@
+command_id: 7C0.7C8.221021
+test_cases:
+- expected_values:
+    MIRAI_BATTERY_VOLTAGE: 10.7
+  response: 7C8046210216B
+- expected_values:
+    MIRAI_BATTERY_VOLTAGE: 14.6
+  response: 7C80462102192

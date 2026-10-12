@@ -1,0 +1,11 @@
+command_id: 7D2.7DA.221F46
+test_cases:
+- expected_values:
+    MIRAI_AAT: null
+  response: 7DA04621F4600
+- expected_values:
+    MIRAI_AAT: 5
+  response: 7DA04621F462D
+- expected_values:
+    MIRAI_AAT: 32
+  response: 7DA04621F4648

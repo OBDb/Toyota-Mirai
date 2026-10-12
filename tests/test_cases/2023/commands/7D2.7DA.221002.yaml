@@ -1,0 +1,23 @@
+command_id: 7D2.7DA.221002
+test_cases:
+- expected_values:
+    MIRAI_AUX_BAT_V: 11.70712
+  response: 7DA05621002257C
+- expected_values:
+    MIRAI_AUX_BAT_V: 11.75104
+  response: 7DA0562100225A0
+- expected_values:
+    MIRAI_AUX_BAT_V: 11.75592
+  response: 7DA0562100225A4
+- expected_values:
+    MIRAI_AUX_BAT_V: 12.75144
+  response: 7DA0562100228D4
+- expected_values:
+    MIRAI_AUX_BAT_V: 12.7612
+  response: 7DA0562100228DC
+- expected_values:
+    MIRAI_AUX_BAT_V: 14.51312
+  response: 7DA056210022E78
+- expected_values:
+    MIRAI_AUX_BAT_V: 14.53752
+  response: 7DA056210022E8C

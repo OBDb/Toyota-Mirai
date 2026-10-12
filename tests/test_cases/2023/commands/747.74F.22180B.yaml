@@ -1,0 +1,11 @@
+command_id: 747.74F.22180B
+test_cases:
+- expected_values:
+    MIRAI_HVBAT_IAT: 81.20656
+  response: 74F0562180B4DCF
+- expected_values:
+    MIRAI_HVBAT_IAT: 81.29741
+  response: 74F0562180B4DDC
+- expected_values:
+    MIRAI_HVBAT_IAT: 81.63287
+  response: 74F0562180B4E0C

@@ -1,0 +1,8 @@
+command_id: 7D2.7DA.221FA6|fc=1
+test_cases:
+- expected_values:
+    MIRAI_DIST_1FA6: 28266.5
+  response: 7DA07621FA600045029
+- expected_values:
+    MIRAI_DIST_1FA6: 28266.8
+  response: 7DA07621FA60004502C

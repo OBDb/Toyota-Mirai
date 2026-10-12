@@ -1,0 +1,63 @@
+command_id: 750.758.2116|e=2A,fc=1
+test_cases:
+- expected_values:
+    MIRAI_TT_FL: 5
+    MIRAI_TT_FR: 5
+    MIRAI_TT_RL: 5
+    MIRAI_TT_RR: 5
+  response: |-
+    7582A100761162D2D2D
+    7582A212D0000000000
+- expected_values:
+    MIRAI_TT_FL: 6
+    MIRAI_TT_FR: 6
+    MIRAI_TT_RL: 6
+    MIRAI_TT_RR: 7
+  response: |-
+    7582A100761162E2E2E
+    7582A212F0000000000
+- expected_values:
+    MIRAI_TT_FL: 14
+    MIRAI_TT_FR: 14
+    MIRAI_TT_RL: 15
+  response: |-
+    7582A10076116363637
+    7582A21000000000000
+- expected_values:
+    MIRAI_TT_FL: 16
+    MIRAI_TT_RL: 16
+    MIRAI_TT_RR: 15
+  response: |-
+    7582A10076116380038
+    7582A21370000000000
+- expected_values:
+    MIRAI_TT_FL: 16
+    MIRAI_TT_FR: 16
+    MIRAI_TT_RR: 17
+  response: |-
+    7582A10076116383800
+    7582A21390000000000
+- expected_values:
+    MIRAI_TT_FL: 20
+    MIRAI_TT_FR: 24
+    MIRAI_TT_RL: 21
+    MIRAI_TT_RR: 25
+  response: |-
+    7582A100761163C403D
+    7582A21410000000000
+- expected_values:
+    MIRAI_TT_FL: 26
+    MIRAI_TT_FR: 25
+    MIRAI_TT_RL: 26
+    MIRAI_TT_RR: 25
+  response: |-
+    7582A10076116424142
+    7582A21410000000000
+- expected_values:
+    MIRAI_TT_FL: 27
+    MIRAI_TT_FR: 25
+    MIRAI_TT_RL: 27
+    MIRAI_TT_RR: 24
+  response: |-
+    7582A10076116434143
+    7582A21400000000000

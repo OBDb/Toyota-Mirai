@@ -1,4 +1,344 @@
 { "commands": [
-
+{ "hdr": "747", "rax": "74F", "fcm1": true, "cmd": {"22": "0103"}, "freq": 10, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_ODO", "path": "Trips", "fmt": {"bix": 8, "len": 24, "max": 16777215, "nullmax": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "747", "rax": "74F", "cmd": {"22": "106E"}, "freq": 5, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_AC_P_747", "path": "Climate", "fmt": { "len": 8, "max": 12.75, "div": 20, "unit": "kilowatts" }, "name": "Air conditioning power consumption"}
+  ]},
+{ "hdr": "747", "rax": "74F", "cmd": {"22": "1802"}, "freq": 5, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_HVBAT_FAN", "path": "Battery", "fmt": {"bix": 16, "len": 8, "max": 127.5, "div": 2, "unit": "percent" }, "name": "Hybrid battery fan"}
+  ]},
+{ "hdr": "747", "rax": "74F", "cmd": {"22": "180B"}, "freq": 5, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_HVBAT_IAT", "path": "Battery", "fmt": { "len": 16, "max": 400, "min": -58, "mul": 458, "div": 65535, "add": -58, "unit": "fahrenheit" }, "name": "Hybrid battery intake air temperature"}
+  ]},
+{ "hdr": "747", "rax": "74F", "cmd": {"22": "1814"}, "freq": 5, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_BAT_T_01", "path": "Battery", "fmt": {           "len": 16, "max": 205, "min": -50, "mul": 19531, "div": 5000000, "add": -50, "unit": "celsius" }, "name": "Battery temperature 01"},
+    {"id": "MIRAI_BAT_T_02", "path": "Battery", "fmt": {"bix": 16, "len": 16, "max": 205, "min": -50, "mul": 19531, "div": 5000000, "add": -50, "unit": "celsius" }, "name": "Battery temperature 02"},
+    {"id": "MIRAI_BAT_T_03", "path": "Battery", "fmt": {"bix": 32, "len": 16, "max": 205, "min": -50, "mul": 19531, "div": 5000000, "add": -50, "unit": "celsius" }, "name": "Battery temperature 03"},
+    {"id": "MIRAI_BAT_T_04", "path": "Battery", "fmt": {"bix": 48, "len": 16, "max": 205, "min": -50, "mul": 19531, "div": 5000000, "add": -50, "unit": "celsius" }, "name": "Battery temperature 04"},
+    {"id": "MIRAI_BAT_T_05", "path": "Battery", "fmt": {"bix": 64, "len": 16, "max": 205, "min": -50, "mul": 19531, "div": 5000000, "add": -50, "unit": "celsius" }, "name": "Battery temperature 05"},
+    {"id": "MIRAI_BAT_T_06", "path": "Battery", "fmt": {"bix": 80, "len": 16, "max": 205, "min": -50, "mul": 19531, "div": 5000000, "add": -50, "unit": "celsius" }, "name": "Battery temperature 06"}
+  ]},
+{ "hdr": "747", "rax": "74F", "cmd": {"22": "1819"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_HYBRID_BAT_BLOCK_1_V", "path": "Battery", "fmt": {           "len": 16, "max": 4.99, "mul": 5, "div": 65536, "unit": "volts" }, "name": "Hybrid battery block 1 average voltage"},
+    {"id": "MIRAI_HYBRID_BAT_BLOCK_2_V", "path": "Battery", "fmt": {"bix": 16, "len": 16, "max": 4.99, "mul": 5, "div": 65536, "unit": "volts" }, "name": "Hybrid battery block 2 average voltage"},
+    {"id": "MIRAI_HYBRID_BAT_BLOCK_3_V", "path": "Battery", "fmt": {"bix": 32, "len": 16, "max": 4.99, "mul": 5, "div": 65536, "unit": "volts" }, "name": "Hybrid battery block 3 average voltage"},
+    {"id": "MIRAI_HYBRID_BAT_BLOCK_4_V", "path": "Battery", "fmt": {"bix": 48, "len": 16, "max": 4.99, "mul": 5, "div": 65536, "unit": "volts" }, "name": "Hybrid battery block 4 average voltage"}
+  ]},
+{ "hdr": "747", "rax": "74F", "fcm1": true, "cmd": {"22": "182E"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_HVBAT_C01_V", "path": "Battery.Cells", "fmt": {             "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #01 voltage"},
+    {"id": "MIRAI_HVBAT_C02_V", "path": "Battery.Cells", "fmt": {"bix": 16,   "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #02 voltage"},
+    {"id": "MIRAI_HVBAT_C03_V", "path": "Battery.Cells", "fmt": {"bix": 32,   "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #03 voltage"},
+    {"id": "MIRAI_HVBAT_C04_V", "path": "Battery.Cells", "fmt": {"bix": 48,   "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #04 voltage"},
+    {"id": "MIRAI_HVBAT_C05_V", "path": "Battery.Cells", "fmt": {"bix": 64,   "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #05 voltage"},
+    {"id": "MIRAI_HVBAT_C06_V", "path": "Battery.Cells", "fmt": {"bix": 80,   "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #06 voltage"},
+    {"id": "MIRAI_HVBAT_C07_V", "path": "Battery.Cells", "fmt": {"bix": 96,   "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #07 voltage"},
+    {"id": "MIRAI_HVBAT_C08_V", "path": "Battery.Cells", "fmt": {"bix": 112,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #08 voltage"},
+    {"id": "MIRAI_HVBAT_C09_V", "path": "Battery.Cells", "fmt": {"bix": 128,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #09 voltage"},
+    {"id": "MIRAI_HVBAT_C10_V", "path": "Battery.Cells", "fmt": {"bix": 144,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #10 voltage"},
+    {"id": "MIRAI_HVBAT_C11_V", "path": "Battery.Cells", "fmt": {"bix": 160,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #11 voltage"},
+    {"id": "MIRAI_HVBAT_C12_V", "path": "Battery.Cells", "fmt": {"bix": 176,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #12 voltage"},
+    {"id": "MIRAI_HVBAT_C13_V", "path": "Battery.Cells", "fmt": {"bix": 192,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #13 voltage"},
+    {"id": "MIRAI_HVBAT_C14_V", "path": "Battery.Cells", "fmt": {"bix": 208,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #14 voltage"},
+    {"id": "MIRAI_HVBAT_C15_V", "path": "Battery.Cells", "fmt": {"bix": 224,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #15 voltage"},
+    {"id": "MIRAI_HVBAT_C16_V", "path": "Battery.Cells", "fmt": {"bix": 240,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #16 voltage"},
+    {"id": "MIRAI_HVBAT_C17_V", "path": "Battery.Cells", "fmt": {"bix": 256,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #17 voltage"},
+    {"id": "MIRAI_HVBAT_C18_V", "path": "Battery.Cells", "fmt": {"bix": 272,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #18 voltage"},
+    {"id": "MIRAI_HVBAT_C19_V", "path": "Battery.Cells", "fmt": {"bix": 288,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #19 voltage"},
+    {"id": "MIRAI_HVBAT_C20_V", "path": "Battery.Cells", "fmt": {"bix": 304,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #20 voltage"},
+    {"id": "MIRAI_HVBAT_C21_V", "path": "Battery.Cells", "fmt": {"bix": 320,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #21 voltage"},
+    {"id": "MIRAI_HVBAT_C22_V", "path": "Battery.Cells", "fmt": {"bix": 336,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #22 voltage"},
+    {"id": "MIRAI_HVBAT_C23_V", "path": "Battery.Cells", "fmt": {"bix": 352,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #23 voltage"},
+    {"id": "MIRAI_HVBAT_C24_V", "path": "Battery.Cells", "fmt": {"bix": 368,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #24 voltage"},
+    {"id": "MIRAI_HVBAT_C25_V", "path": "Battery.Cells", "fmt": {"bix": 384,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #25 voltage"},
+    {"id": "MIRAI_HVBAT_C26_V", "path": "Battery.Cells", "fmt": {"bix": 400,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #26 voltage"},
+    {"id": "MIRAI_HVBAT_C27_V", "path": "Battery.Cells", "fmt": {"bix": 416,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #27 voltage"},
+    {"id": "MIRAI_HVBAT_C28_V", "path": "Battery.Cells", "fmt": {"bix": 432,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #28 voltage"},
+    {"id": "MIRAI_HVBAT_C29_V", "path": "Battery.Cells", "fmt": {"bix": 448,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #29 voltage"},
+    {"id": "MIRAI_HVBAT_C30_V", "path": "Battery.Cells", "fmt": {"bix": 464,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #30 voltage"},
+    {"id": "MIRAI_HVBAT_C31_V", "path": "Battery.Cells", "fmt": {"bix": 480,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #31 voltage"},
+    {"id": "MIRAI_HVBAT_C32_V", "path": "Battery.Cells", "fmt": {"bix": 496,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #32 voltage"},
+    {"id": "MIRAI_HVBAT_C33_V", "path": "Battery.Cells", "fmt": {"bix": 512,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #33 voltage"},
+    {"id": "MIRAI_HVBAT_C34_V", "path": "Battery.Cells", "fmt": {"bix": 528,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #34 voltage"},
+    {"id": "MIRAI_HVBAT_C35_V", "path": "Battery.Cells", "fmt": {"bix": 544,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #35 voltage"},
+    {"id": "MIRAI_HVBAT_C36_V", "path": "Battery.Cells", "fmt": {"bix": 560,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #36 voltage"},
+    {"id": "MIRAI_HVBAT_C37_V", "path": "Battery.Cells", "fmt": {"bix": 576,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #37 voltage"},
+    {"id": "MIRAI_HVBAT_C38_V", "path": "Battery.Cells", "fmt": {"bix": 592,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #38 voltage"},
+    {"id": "MIRAI_HVBAT_C39_V", "path": "Battery.Cells", "fmt": {"bix": 608,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #39 voltage"},
+    {"id": "MIRAI_HVBAT_C40_V", "path": "Battery.Cells", "fmt": {"bix": 624,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #40 voltage"},
+    {"id": "MIRAI_HVBAT_C41_V", "path": "Battery.Cells", "fmt": {"bix": 640,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #41 voltage"},
+    {"id": "MIRAI_HVBAT_C42_V", "path": "Battery.Cells", "fmt": {"bix": 656,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #42 voltage"},
+    {"id": "MIRAI_HVBAT_C43_V", "path": "Battery.Cells", "fmt": {"bix": 672,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #43 voltage"},
+    {"id": "MIRAI_HVBAT_C44_V", "path": "Battery.Cells", "fmt": {"bix": 688,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #44 voltage"},
+    {"id": "MIRAI_HVBAT_C45_V", "path": "Battery.Cells", "fmt": {"bix": 704,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #45 voltage"},
+    {"id": "MIRAI_HVBAT_C46_V", "path": "Battery.Cells", "fmt": {"bix": 720,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #46 voltage"},
+    {"id": "MIRAI_HVBAT_C47_V", "path": "Battery.Cells", "fmt": {"bix": 736,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #47 voltage"},
+    {"id": "MIRAI_HVBAT_C48_V", "path": "Battery.Cells", "fmt": {"bix": 752,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #48 voltage"},
+    {"id": "MIRAI_HVBAT_C49_V", "path": "Battery.Cells", "fmt": {"bix": 768,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #49 voltage"},
+    {"id": "MIRAI_HVBAT_C50_V", "path": "Battery.Cells", "fmt": {"bix": 784,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #50 voltage"},
+    {"id": "MIRAI_HVBAT_C51_V", "path": "Battery.Cells", "fmt": {"bix": 800,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #51 voltage"},
+    {"id": "MIRAI_HVBAT_C52_V", "path": "Battery.Cells", "fmt": {"bix": 816,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #52 voltage"},
+    {"id": "MIRAI_HVBAT_C53_V", "path": "Battery.Cells", "fmt": {"bix": 832,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #53 voltage"},
+    {"id": "MIRAI_HVBAT_C54_V", "path": "Battery.Cells", "fmt": {"bix": 848,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #54 voltage"},
+    {"id": "MIRAI_HVBAT_C55_V", "path": "Battery.Cells", "fmt": {"bix": 864,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #55 voltage"},
+    {"id": "MIRAI_HVBAT_C56_V", "path": "Battery.Cells", "fmt": {"bix": 880,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #56 voltage"},
+    {"id": "MIRAI_HVBAT_C57_V", "path": "Battery.Cells", "fmt": {"bix": 896,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #57 voltage"},
+    {"id": "MIRAI_HVBAT_C58_V", "path": "Battery.Cells", "fmt": {"bix": 912,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #58 voltage"},
+    {"id": "MIRAI_HVBAT_C59_V", "path": "Battery.Cells", "fmt": {"bix": 928,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #59 voltage"},
+    {"id": "MIRAI_HVBAT_C60_V", "path": "Battery.Cells", "fmt": {"bix": 944,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #60 voltage"},
+    {"id": "MIRAI_HVBAT_C61_V", "path": "Battery.Cells", "fmt": {"bix": 960,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #61 voltage"},
+    {"id": "MIRAI_HVBAT_C62_V", "path": "Battery.Cells", "fmt": {"bix": 976,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #62 voltage"},
+    {"id": "MIRAI_HVBAT_C63_V", "path": "Battery.Cells", "fmt": {"bix": 992,  "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #63 voltage"},
+    {"id": "MIRAI_HVBAT_C64_V", "path": "Battery.Cells", "fmt": {"bix": 1008, "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #64 voltage"},
+    {"id": "MIRAI_HVBAT_C65_V", "path": "Battery.Cells", "fmt": {"bix": 1024, "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #65 voltage"},
+    {"id": "MIRAI_HVBAT_C66_V", "path": "Battery.Cells", "fmt": {"bix": 1040, "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #66 voltage"},
+    {"id": "MIRAI_HVBAT_C67_V", "path": "Battery.Cells", "fmt": {"bix": 1056, "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #67 voltage"},
+    {"id": "MIRAI_HVBAT_C68_V", "path": "Battery.Cells", "fmt": {"bix": 1072, "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #68 voltage"},
+    {"id": "MIRAI_HVBAT_C69_V", "path": "Battery.Cells", "fmt": {"bix": 1088, "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #69 voltage"},
+    {"id": "MIRAI_HVBAT_C70_V", "path": "Battery.Cells", "fmt": {"bix": 1104, "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #70 voltage"},
+    {"id": "MIRAI_HVBAT_C71_V", "path": "Battery.Cells", "fmt": {"bix": 1120, "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #71 voltage"},
+    {"id": "MIRAI_HVBAT_C72_V", "path": "Battery.Cells", "fmt": {"bix": 1136, "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #72 voltage"},
+    {"id": "MIRAI_HVBAT_C73_V", "path": "Battery.Cells", "fmt": {"bix": 1152, "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #73 voltage"},
+    {"id": "MIRAI_HVBAT_C74_V", "path": "Battery.Cells", "fmt": {"bix": 1168, "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #74 voltage"},
+    {"id": "MIRAI_HVBAT_C75_V", "path": "Battery.Cells", "fmt": {"bix": 1184, "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #75 voltage"},
+    {"id": "MIRAI_HVBAT_C76_V", "path": "Battery.Cells", "fmt": {"bix": 1200, "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #76 voltage"},
+    {"id": "MIRAI_HVBAT_C77_V", "path": "Battery.Cells", "fmt": {"bix": 1216, "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #77 voltage"},
+    {"id": "MIRAI_HVBAT_C78_V", "path": "Battery.Cells", "fmt": {"bix": 1232, "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #78 voltage"},
+    {"id": "MIRAI_HVBAT_C79_V", "path": "Battery.Cells", "fmt": {"bix": 1248, "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #79 voltage"},
+    {"id": "MIRAI_HVBAT_C80_V", "path": "Battery.Cells", "fmt": {"bix": 1264, "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #80 voltage"},
+    {"id": "MIRAI_HVBAT_C81_V", "path": "Battery.Cells", "fmt": {"bix": 1280, "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #81 voltage"},
+    {"id": "MIRAI_HVBAT_C82_V", "path": "Battery.Cells", "fmt": {"bix": 1296, "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #82 voltage"},
+    {"id": "MIRAI_HVBAT_C83_V", "path": "Battery.Cells", "fmt": {"bix": 1312, "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #83 voltage"},
+    {"id": "MIRAI_HVBAT_C84_V", "path": "Battery.Cells", "fmt": {"bix": 1328, "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #84 voltage"}
+  ]},
+{ "hdr": "747", "rax": "74F", "fcm1": true, "cmd": {"22": "1F5B"}, "freq": 10, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_SOC_747", "path": "Battery", "fmt": { "len": 8, "max": 100, "div": 2.55, "unit": "percent" }, "name": "State of charge, battery ECU"}
+  ]},
+{ "hdr": "747", "rax": "74F", "cmd": {"22": "1F9A"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_HYBRID_BAT_CURRENT", "path": "Battery", "fmt": {"bix": 32, "len": 16, "max": 3276.7, "min": -3276.8, "div": 10, "sign": true, "unit": "amps" }, "name": "Hybrid battery current"}
+  ]},
+{ "hdr": "750", "rax": "758", "eax": "2A", "fcm1": true, "cmd": {"21": "16"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_TT_FL",    "path": "Tires", "fmt": {           "len": 8, "max": 215, "min": -40, "add": -40, "nullmin": -40, "nullmax": 215, "unit": "celsius" }, "name": "Front left tire temperature",  "suggestedMetric": "frontLeftTireTemperature"},
+    {"id": "MIRAI_TT_FR",    "path": "Tires", "fmt": {"bix": 8,  "len": 8, "max": 215, "min": -40, "add": -40, "nullmin": -40, "nullmax": 215, "unit": "celsius" }, "name": "Front right tire temperature", "suggestedMetric": "frontRightTireTemperature"},
+    {"id": "MIRAI_TT_RL",    "path": "Tires", "fmt": {"bix": 16, "len": 8, "max": 215, "min": -40, "add": -40, "nullmin": -40, "nullmax": 215, "unit": "celsius" }, "name": "Rear left tire temperature",   "suggestedMetric": "rearLeftTireTemperature"},
+    {"id": "MIRAI_TT_RR",    "path": "Tires", "fmt": {"bix": 24, "len": 8, "max": 215, "min": -40, "add": -40, "nullmin": -40, "nullmax": 215, "unit": "celsius" }, "name": "Rear right tire temperature",  "suggestedMetric": "rearRightTireTemperature"},
+    {"id": "MIRAI_TT_SPARE", "path": "Tires", "fmt": {"bix": 32, "len": 8, "max": 215, "min": -40, "add": -40, "nullmin": -40, "nullmax": 215, "unit": "celsius" }, "name": "Spare tire temperature"}
+  ]},
+{ "hdr": "750", "rax": "758", "eax": "2A", "tst": "2A", "fcm1": true, "cmd": {"21": "30"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_TP_FL_V1",    "path": "Tires", "fmt": {           "len": 8, "max": 3.896, "div": 58, "add": -0.5, "nullmin": 0, "nullmax": 3.896, "unit": "bars" }, "name": "Front left tire pressure",  "suggestedMetric": "frontLeftTirePressure"},
+    {"id": "MIRAI_TP_FR_V1",    "path": "Tires", "fmt": {"bix": 8,  "len": 8, "max": 3.896, "div": 58, "add": -0.5, "nullmin": 0, "nullmax": 3.896, "unit": "bars" }, "name": "Front right tire pressure", "suggestedMetric": "frontRightTirePressure"},
+    {"id": "MIRAI_TP_RL_V1",    "path": "Tires", "fmt": {"bix": 16, "len": 8, "max": 3.896, "div": 58, "add": -0.5, "nullmin": 0, "nullmax": 3.896, "unit": "bars" }, "name": "Rear left tire pressure",   "suggestedMetric": "rearLeftTirePressure"},
+    {"id": "MIRAI_TP_RR_V1",    "path": "Tires", "fmt": {"bix": 24, "len": 8, "max": 3.896, "div": 58, "add": -0.5, "nullmin": 0, "nullmax": 3.896, "unit": "bars" }, "name": "Rear right tire pressure",  "suggestedMetric": "rearRightTirePressure"},
+    {"id": "MIRAI_TP_SPARE_V1", "path": "Tires", "fmt": {"bix": 32, "len": 8, "max": 3.896, "div": 58, "add": -0.5, "nullmin": 0, "nullmax": 3.896, "unit": "bars" }, "name": "Spare tire pressure"}
+  ]},
+{ "hdr": "7B0", "rax": "7B8", "cmd": {"22": "1006"}, "freq": 5, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_MASTER_CYL_TEMP", "path": "Brakes", "fmt": { "len": 8, "max": 100, "min": -20, "add": -80, "unit": "celsius" }, "name": "Master cylinder sensor temperature"}
+  ]},
+{ "hdr": "7B0", "rax": "7B8", "fcm1": true, "cmd": {"22": "104C"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_BRAKE_STROKE", "path": "Control", "fmt": { "len": 8, "max": 255, "unit": "millimeters" }, "name": "Brake pedal stroke"}
+  ]},
+{ "hdr": "7B3", "rax": "7BB", "cmd": {"22": "1004"}, "freq": 0.25, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_STEERING_ANGLE", "path": "Control", "fmt": { "len": 16, "max": 410, "min": -410, "mul": 1.5, "sign": true, "unit": "degrees" }, "name": "Steering angle"}
+  ]},
+{ "hdr": "7C0", "rax": "7C8", "cmd": {"22": "1021"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_BATTERY_VOLTAGE", "path": "Electrical", "fmt": { "len": 8, "max": 20, "div": 10, "unit": "volts" }, "name": "Battery voltage"}
+  ]},
+{ "hdr": "7C4", "rax": "7CC", "cmd": {"21": "21"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_CABIN_T", "path": "Engine", "fmt": { "len": 8, "max": 57.25, "min": -6.5, "mul": 63.75, "div": 255, "add": -6.5, "unit": "celsius" }, "name": "Cabin temperature"}
+  ]},
+{ "hdr": "7C4", "rax": "7CC", "cmd": {"21": "22"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_AAT_7C4", "path": "Engine", "fmt": { "len": 8, "max": 65.95, "min": -23.3, "mul": 89.25, "div": 255, "add": -23.3, "unit": "celsius" }, "name": "Ambient air temperature"}
+  ]},
+{ "hdr": "7C4", "rax": "7CC", "cmd": {"21": "26"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_AC_CT", "path": "Engine", "fmt": { "len": 8, "max": 90.55, "min": 1.3, "mul": 89.25, "div": 255, "add": 1.3, "unit": "celsius" }, "name": "Coolant temperature"}
+  ]},
+{ "hdr": "7C4", "rax": "7CC", "cmd": {"21": "3C"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_BLOWER_MOTOR_SPEED_LEVEL", "path": "Climate", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Blower motor speed level"}
+  ]},
+{ "hdr": "7C4", "rax": "7CC", "cmd": {"21": "3D"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_ADJUSTED_AMBIENT_T", "path": "Climate", "fmt": { "len": 8, "max": 50.8, "min": -30.8, "mul": 81.6, "div": 255, "add": -30.8, "unit": "celsius" }, "name": "Adjusted ambient temperature"}
+  ]},
+{ "hdr": "7C4", "rax": "7CC", "cmd": {"21": "41"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_AIR_MIX_SERVO_TARG_D", "path": "Engine",  "fmt": {          "len": 8, "max": 255, "unit": "scalar" }, "name": "Air mix servo target pulse, driver"},
+    {"id": "MIRAI_AIR_MIX_SERVO_ACT_D",  "path": "Climate", "fmt": {"bix": 8, "len": 8, "max": 255, "unit": "scalar" }, "name": "Air mix servo, actual pulse, driver"}
+  ]},
+{ "hdr": "7C4", "rax": "7CC", "cmd": {"21": "44"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_AIR_INLET_DAMPER_TARGET_PULSE", "path": "Climate", "fmt": {          "len": 8, "max": 255, "unit": "scalar" }, "name": "Air inlet damper target pulse"},
+    {"id": "MIRAI_AIR_INLET_DAMPER_ACTUAL_PULSE", "path": "Climate", "fmt": {"bix": 8, "len": 8, "max": 255, "unit": "scalar" }, "name": "Air inlet damper actual pulse"}
+  ]},
+{ "hdr": "7C4", "rax": "7CC", "cmd": {"21": "49"}, "freq": 0.25, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_COMP_SPD", "path": "Movement", "fmt": { "len": 16, "max": 65535, "unit": "rpm" }, "name": "Compressor speed"}
+  ]},
+{ "hdr": "7C4", "rax": "7CC", "cmd": {"21": "4A"}, "freq": 0.25, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_COMP_TGT_SPD", "path": "Movement", "fmt": { "len": 16, "max": 65535, "unit": "rpm" }, "name": "Compressor, target speed"}
+  ]},
+{ "hdr": "7C4", "rax": "7CC", "cmd": {"21": "4B"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_EVAP_FIN_THERMISTOR", "path": "Climate", "fmt": { "len": 8, "max": 59.55, "min": -29.7, "mul": 89.25, "div": 255, "add": -29.7, "unit": "celsius" }, "name": "Evaporator fin thermistor"}
+  ]},
+{ "hdr": "7C4", "rax": "7CC", "cmd": {"21": "4C"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_EVAP_TARG_T", "path": "Engine", "fmt": { "len": 16, "max": 327.67, "min": -327.68, "div": 100, "add": -327.68, "unit": "scalar" }, "name": "Evaporator target temp"}
+  ]},
+{ "hdr": "7C4", "rax": "7CC", "cmd": {"21": "53"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_REGULATOR_P", "path": "Engine", "fmt": { "len": 8, "max": 3294, "min": -456.68, "mul": 375105, "div": 25500, "add": -456.68, "unit": "kilopascal" }, "name": "Regulator pressure"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "0102"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_KEY_CYCLE", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Key cycle"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "fcm1": true, "cmd": {"22": "0103"}, "freq": 10, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_ODO_V2", "path": "Trips", "fmt": {"bix": 8, "len": 24, "max": 16777215, "nullmax": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1002"}, "freq": 5, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_AUX_BAT_V", "path": "Battery", "fmt": { "len": 16, "max": 79.95, "mul": 61, "div": 50000, "unit": "volts" }, "name": "Aux battery voltage"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1039"}, "freq": 0.25, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_FRONT_REAR_MOTOR_TQ", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 32.76, "min": -32.76, "div": 1000, "add": -32.768, "unit": "scalar" }, "name": "Front/rear motor torque ratio"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1040"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_TRANSAXLE_OIL_T", "path": "Engine", "fmt": {"bix": 16, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transaxle oil temperature"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "fcm1": true, "cmd": {"22": "1060"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_APP_V2", "path": "Engine", "fmt": { "len": 8, "max": 100, "div": 2, "unit": "percent" }, "name": "Accelerator pedal position"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "fcm1": true, "cmd": {"22": "1061"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_SHIFT", "path": "Transmission", "name": "Shift position", "fmt": {"len": 8, "map": {
+          "0": { "description": "Park",    "value": "P" },
+          "2": { "description": "Reverse", "value": "R" },
+          "4": { "description": "Neutral", "value": "N" },
+          "6": { "description": "Drive",   "value": "D" }
+        }}
+    }
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1069"}, "freq": 0.25, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_MOTOR_REGENERATIVE",       "path": "Engine", "fmt": {           "len": 16, "max": 4095, "min": -4096, "div": 8, "add": -4096, "unit": "kilowatts" }, "name": "Motor regenerative brake torque, requested"},
+    {"id": "MIRAI_MOTOR_REGENERATIVE_BREAK", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 4095, "min": -4096, "div": 8, "add": -4096, "unit": "kilowatts" }, "name": "Motor regenerative brake torque"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "106E"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_AC_POWER_CONS", "path": "Engine", "fmt": { "len": 8, "max": 12.75, "div": 20, "unit": "kilowatts" }, "name": "Air conditioning power consumption"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1075"}, "freq": 0.1, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_FR_WHEEL_VSS", "path": "Movement", "fmt": {           "len": 16, "max": 327.67, "min": -327.68, "div": 100, "add": -327.68, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"},
+    {"id": "MIRAI_FL_WHEEL_VSS", "path": "Movement", "fmt": {"bix": 16, "len": 16, "max": 327.67, "min": -327.68, "div": 100, "add": -327.68, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"},
+    {"id": "MIRAI_RR_WHEEL_VSS", "path": "Movement", "fmt": {"bix": 32, "len": 16, "max": 327.67, "min": -327.68, "div": 100, "add": -327.68, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"},
+    {"id": "MIRAI_RL_WHEEL_VSS", "path": "Movement", "fmt": {"bix": 48, "len": 16, "max": 327.67, "min": -327.68, "div": 100, "add": -327.68, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "fcm1": true, "cmd": {"22": "1076"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_READY", "path": "Drivetrain", "fmt": {"bix": 15, "len": 1, "max": 1, "unit": "noyes" }, "name": "Ready to drive"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "10A1"}, "freq": 0.25, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_RPM", "path": "Engine", "fmt": {           "len": 16, "max": 32767, "min": -32768,           "add": -32768, "unit": "rpm"          }, "name": "Motor RPM"},
+    {"id": "MIRAI_TQ",  "path": "Engine", "fmt": {"bix": 48, "len": 16, "max": 4095,  "min": -4096,  "div": 8, "add": -4096,  "unit": "newtonMeters" }, "name": "Motor torque"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "10A5"}, "freq": 5, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_MOTOR_INVERTER_T",     "path": "Engine", "fmt": {           "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Motor inverter temperature"},
+    {"id": "MIRAI_MOTOR_INVERTER_T_ON",  "path": "Engine", "fmt": {"bix": 8,  "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Motor inverter temperature after ignition on"},
+    {"id": "MIRAI_MAX_MOTOR_INVERTER_T", "path": "Engine", "fmt": {"bix": 16, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Maximum motor inverter temperature"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "10B0"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_VL_V_BEFORE_BOOSTING", "path": "Battery", "fmt": {           "len": 16, "max": 32767, "div": 2, "unit": "volts" }, "name": "Vl-voltage before boosting"},
+    {"id": "MIRAI_VH_V_AFTER_BOOSTING",  "path": "Battery", "fmt": {"bix": 16, "len": 16, "max": 32767, "div": 2, "unit": "volts" }, "name": "Vh-voltage after boosting"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "10B2"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_INVRT_COOLANT_T", "path": "Engine", "fmt": { "len": 8, "max": 100, "add": -40, "unit": "celsius" }, "name": "Inverter coolant temperature"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "fcm1": true, "cmd": {"22": "15E5"}, "freq": 60, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_12V_CAP", "path": "Electrical", "fmt": { "len": 8, "max": 127.5, "div": 2, "unit": "ampereHours" }, "name": "12V battery full charge capacity"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "fcm1": true, "cmd": {"22": "15E8"}, "freq": 60, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_12V_AH_IN",   "path": "Electrical", "fmt": {           "len": 32, "max": 429496729.5, "div": 10, "unit": "ampereHours" }, "name": "12V battery charge, total"},
+    {"id": "MIRAI_12V_AH_OUT",  "path": "Electrical", "fmt": {"bix": 32, "len": 32, "max": 429496729.5, "div": 10, "unit": "ampereHours" }, "name": "12V battery discharge, total"},
+    {"id": "MIRAI_READY_HOURS", "path": "Stats",      "fmt": {"bix": 80, "len": 16, "max": 65535,                  "unit": "hours"       }, "name": "Ready-on time, total"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "15EE"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_12V_V", "path": "Battery", "fmt": { "len": 8, "max": 80.2, "mul": 0.31448, "add": 0.0125, "unit": "volts" }, "name": "12V battery voltage", "suggestedMetric": "starterBatteryVoltage"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "15F7"}, "freq": 0.5, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_12V_C", "path": "Battery", "fmt": { "len": 16, "max": 124, "min": -125, "mul": 38.147, "div": 10000, "add": -125, "unit": "amps" }, "name": "12V battery current"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "15F8"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_12V_T", "path": "Battery", "fmt": { "len": 16, "max": 6513.5, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "12V battery temperature"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1829"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_HVBAT_MAX_T", "path": "Battery", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "HV battery maximum temperature"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "182A"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_HVBAT_MIN_T", "path": "Battery", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "HV battery minimum temperature"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "fcm1": true, "cmd": {"22": "1F0D"}, "freq": 0.25, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_VSS_V2", "path": "Movement", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1F42"}, "freq": 5, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_12V_BAT_V_SMOOTHED", "path": "Battery", "fmt": { "len": 16, "max": 65.53, "div": 1000, "unit": "volts" }, "name": "12V battery voltage smoothed"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1F46"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_AAT", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "nullmin": -40, "unit": "celsius" }, "name": "Ambient temperature"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "fcm1": true, "cmd": {"22": "1F5B"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_SOC", "path": "Battery", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "State of charge", "suggestedMetric": "stateOfCharge"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1F9A"}, "freq": 0.5, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_HVBAT_V", "path": "Battery", "fmt": {"bix": 16, "len": 16, "max": 1023,                   "mul": 156.25, "div": 10000,               "unit": "volts" }, "name": "HV battery voltage"},
+    {"id": "MIRAI_HVBAT_C", "path": "Battery", "fmt": {"bix": 32, "len": 16, "max": 3276.7, "min": -3276.8,                "div": 10,    "sign": true, "unit": "amps"  }, "name": "HV battery current"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "fcm1": true, "cmd": {"22": "1FA6"}, "freq": 10, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "MIRAI_DIST_1FA6", "path": "Trips", "fmt": { "len": 32, "max": 429496729.5, "div": 10, "unit": "kilometers" }, "name": "Distance counter"}
+  ]}
+],
+"signalGroups": [
+  {"id": "MIRAI_HVBAT_CELLS_V", "path": "Battery.BatteryPack", "matchingRegex": "MIRAI_HVBAT_(C\\d+)_V", "name": "Hybrid battery cell voltages", "suggestedMetricGroup": "batteryModulesVoltage"}
 ]
 }

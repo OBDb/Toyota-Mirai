@@ -1,0 +1,10 @@
+command_id: 7D2.7DA.2215E8|fc=1
+test_cases:
+- expected_values:
+    MIRAI_12V_AH_IN: 2783.9
+    MIRAI_12V_AH_OUT: 126.8
+    MIRAI_READY_HOURS: 11
+  response: |-
+    7DA10146215E800006C
+    7DA21BF000004F48182
+    7DA22000B000010C8E0

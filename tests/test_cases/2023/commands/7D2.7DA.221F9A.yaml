@@ -1,0 +1,56 @@
+command_id: 7D2.7DA.221F9A
+test_cases:
+- expected_values:
+    MIRAI_HVBAT_C: 139.3
+    MIRAI_HVBAT_V: 286
+  response: |-
+    7DA1009621F9A0E0047
+    7DA2180057100000000
+- expected_values:
+    MIRAI_HVBAT_C: 112.6
+    MIRAI_HVBAT_V: 287
+  response: |-
+    7DA1009621F9A0E0047
+    7DA21C0046600000000
+- expected_values:
+    MIRAI_HVBAT_C: 121.2
+    MIRAI_HVBAT_V: 288
+  response: |-
+    7DA1009621F9A0E0048
+    7DA210004BC00000000
+- expected_values:
+    MIRAI_HVBAT_C: 152
+    MIRAI_HVBAT_V: 288
+  response: |-
+    7DA1009621F9A0E0048
+    7DA210005F000000000
+- expected_values:
+    MIRAI_HVBAT_C: 73.5
+    MIRAI_HVBAT_V: 301
+  response: |-
+    7DA1009621F9A0E004B
+    7DA214002DF00000000
+- expected_values:
+    MIRAI_HVBAT_C: 1.2
+    MIRAI_HVBAT_V: 309
+  response: |-
+    7DA1009621F9A0E004D
+    7DA2140000C00000000
+- expected_values:
+    MIRAI_HVBAT_C: -18
+    MIRAI_HVBAT_V: 309
+  response: |-
+    7DA1009621F9A0E004D
+    7DA2140FF4C00000000
+- expected_values:
+    MIRAI_HVBAT_C: -0.9
+    MIRAI_HVBAT_V: 309
+  response: |-
+    7DA1009621F9A0E004D
+    7DA2140FFF700000000
+- expected_values:
+    MIRAI_HVBAT_C: -119.5
+    MIRAI_HVBAT_V: 332
+  response: |-
+    7DA1009621F9A0E0053
+    7DA2100FB5500000000

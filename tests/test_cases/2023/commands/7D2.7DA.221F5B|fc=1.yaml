@@ -1,0 +1,8 @@
+command_id: 7D2.7DA.221F5B|fc=1
+test_cases:
+- expected_values:
+    MIRAI_SOC: 45.09804
+  response: 7DA04621F5B73
+- expected_values:
+    MIRAI_SOC: 76.07843
+  response: 7DA04621F5BC2
