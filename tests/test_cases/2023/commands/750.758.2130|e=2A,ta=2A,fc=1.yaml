@@ -1,0 +1,58 @@
+command_id: 750.758.2130|e=2A,ta=2A,fc=1
+test_cases:
+- expected_values:
+    MIRAI_TP_FL_V1: null
+    MIRAI_TP_FR_V1: null
+    MIRAI_TP_RL_V1: null
+    MIRAI_TP_RR_V1: null
+    MIRAI_TP_SPARE_V1: null
+  response: |-
+    7582A10076130000000
+    7582A21000000000000
+- expected_values:
+    MIRAI_TP_RR_V1: 2.08621
+  response: |-
+    7582A10076130000000
+    7582A21960000000000
+- expected_values:
+    MIRAI_TP_RR_V1: 2.24138
+  response: |-
+    7582A10076130000000
+    7582A219F0000000000
+- expected_values:
+    MIRAI_TP_RL_V1: 2.08621
+  response: |-
+    7582A10076130000096
+    7582A21000000000000
+- expected_values:
+    MIRAI_TP_FL_V1: 2.43103
+    MIRAI_TP_FR_V1: 2.5
+    MIRAI_TP_RL_V1: 2.46552
+    MIRAI_TP_RR_V1: 2.53448
+  response: |-
+    7582A10076130AAAEAC
+    7582A21B00000000000
+- expected_values:
+    MIRAI_TP_FL_V1: 2.5
+    MIRAI_TP_FR_V1: 2.51724
+    MIRAI_TP_RL_V1: 2.53448
+    MIRAI_TP_RR_V1: 2.53448
+  response: |-
+    7582A10076130AEAFB0
+    7582A21B00000000000
+- expected_values:
+    MIRAI_TP_FL_V1: 2.5
+    MIRAI_TP_FR_V1: 2.56897
+    MIRAI_TP_RL_V1: 2.51724
+    MIRAI_TP_RR_V1: 2.55172
+  response: |-
+    7582A10076130AEB2AF
+    7582A21B10000000000
+- expected_values:
+    MIRAI_TP_FL_V1: 2.51724
+    MIRAI_TP_FR_V1: 2.51724
+    MIRAI_TP_RL_V1: 2.53448
+    MIRAI_TP_RR_V1: 2.53448
+  response: |-
+    7582A10076130AFAFB0
+    7582A21B00000000000

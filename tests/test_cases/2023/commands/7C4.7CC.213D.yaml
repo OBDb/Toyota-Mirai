@@ -1,0 +1,8 @@
+command_id: 7C4.7CC.213D
+test_cases:
+- expected_values:
+    MIRAI_ADJUSTED_AMBIENT_T: 4.72
+  response: 7CC03613D6F
+- expected_values:
+    MIRAI_ADJUSTED_AMBIENT_T: 31.92
+  response: 7CC03613DC4

@@ -1,0 +1,11 @@
+command_id: 747.74F.221F5B|fc=1
+test_cases:
+- expected_values:
+    MIRAI_SOC_747: 69.41176
+  response: 74F04621F5BB1
+- expected_values:
+    MIRAI_SOC_747: 69.80392
+  response: 74F04621F5BB2
+- expected_values:
+    MIRAI_SOC_747: 73.33333
+  response: 74F04621F5BBB

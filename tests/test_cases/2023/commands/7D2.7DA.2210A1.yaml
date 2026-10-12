@@ -1,0 +1,62 @@
+command_id: 7D2.7DA.2210A1
+test_cases:
+- expected_values:
+    MIRAI_RPM: -533
+  response: |-
+    7DA10096210A17DEB7F
+    7DA21DC040000000000
+- expected_values:
+    MIRAI_RPM: -384
+  response: |-
+    7DA10096210A17E807F
+    7DA21BF040000000000
+- expected_values:
+    MIRAI_RPM: -341
+  response: |-
+    7DA10096210A17EAB7F
+    7DA21B0040000000000
+- expected_values:
+    MIRAI_RPM: -257
+  response: |-
+    7DA10096210A17EFF7F
+    7DA2162040000000000
+- expected_values:
+    MIRAI_RPM: -256
+  response: |-
+    7DA10096210A17F007F
+    7DA2165040000000000
+- expected_values:
+    MIRAI_RPM: -169
+  response: |-
+    7DA10096210A17F577E
+    7DA2116020000000000
+- expected_values:
+    MIRAI_RPM: -169
+  response: |-
+    7DA10096210A17F577F
+    7DA210A040000000000
+- expected_values:
+    MIRAI_RPM: -150
+  response: |-
+    7DA10096210A17F6A7E
+    7DA21FB040000000000
+- expected_values:
+    MIRAI_RPM: -138
+  response: |-
+    7DA10096210A17F767C
+    7DA2128020000000000
+- expected_values:
+    MIRAI_RPM: 1758
+  response: |-
+    7DA10096210A186DE89
+    7DA212F020000000000
+- expected_values:
+    MIRAI_RPM: 4326
+  response: |-
+    7DA10096210A190E682
+    7DA2103040200000000
+- expected_values:
+    MIRAI_RPM: 10641
+  response: |-
+    7DA10096210A1A9917F
+    7DA21EA040200000000

@@ -1,0 +1,17 @@
+command_id: 7D2.7DA.221040
+test_cases:
+- expected_values:
+    MIRAI_TRANSAXLE_OIL_T: 60
+  response: 7DA066210409EE064
+- expected_values:
+    MIRAI_TRANSAXLE_OIL_T: 58
+  response: 7DA06621040A20062
+- expected_values:
+    MIRAI_TRANSAXLE_OIL_T: 56
+  response: 7DA06621040A3F060
+- expected_values:
+    MIRAI_TRANSAXLE_OIL_T: 8
+  response: 7DA06621040D83030
+- expected_values:
+    MIRAI_TRANSAXLE_OIL_T: 7
+  response: 7DA06621040D8D02F
