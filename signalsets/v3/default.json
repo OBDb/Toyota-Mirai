@@ -234,7 +234,7 @@
   ]},
 { "hdr": "7D2", "rax": "7DA", "fcm1": true, "cmd": {"22": "1061"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
   "signals": [
-    {"id": "MIRAI_SHIFT", "path": "Transmission", "name": "Shift position", "fmt": {"len": 8, "map": {
+    {"id": "MIRAI_SHIFT", "path": "Transmission", "name": "Shift position", "suggestedMetric": "gearSelector", "fmt": {"len": 8, "map": {
           "0": { "description": "Park",    "value": "P" },
           "2": { "description": "Reverse", "value": "R" },
           "4": { "description": "Neutral", "value": "N" },
