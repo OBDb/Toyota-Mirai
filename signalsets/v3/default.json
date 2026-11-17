@@ -156,7 +156,7 @@
   ]},
 { "hdr": "7C0", "rax": "7C8", "cmd": {"22": "1021"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
   "signals": [
-    {"id": "MIRAI_BATTERY_VOLTAGE", "path": "Electrical", "fmt": { "len": 8, "max": 20, "div": 10, "unit": "volts" }, "name": "Battery voltage"}
+    {"id": "MIRAI_BATTERY_VOLTAGE", "path": "Electrical", "fmt": { "len": 8, "max": 20, "div": 10, "nullmin": 0, "unit": "volts" }, "name": "Battery voltage"}
   ]},
 { "hdr": "7C4", "rax": "7CC", "cmd": {"21": "21"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
   "signals": [
