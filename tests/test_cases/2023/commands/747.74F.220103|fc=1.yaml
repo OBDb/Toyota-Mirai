@@ -1,14 +1,18 @@
 command_id: 747.74F.220103|fc=1
 test_cases:
 - expected_values:
-    MIRAI_ODO: 11516
+    MIRAI_ODO_RAW: 11516
+    MIRAI_ODO_UNIT: MI
   response: 74F0762010302002CFC
 - expected_values:
-    MIRAI_ODO: 11519
+    MIRAI_ODO_RAW: 11519
+    MIRAI_ODO_UNIT: MI
   response: 74F0762010302002CFF
 - expected_values:
-    MIRAI_ODO: 11520
+    MIRAI_ODO_RAW: 11520
+    MIRAI_ODO_UNIT: MI
   response: 74F0762010302002D00
 - expected_values:
-    MIRAI_ODO: 17417
+    MIRAI_ODO_RAW: 17417
+    MIRAI_ODO_UNIT: MI
   response: 74F0762010302004409
